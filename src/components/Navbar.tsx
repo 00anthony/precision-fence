@@ -74,11 +74,11 @@ export default function Navbar() {
             <div className="flex flex-col leading-none">
               <span
                 className="font-accent text-sm sm:text-base font-700 tracking-widest gold-text"
-                style={{ fontFamily: "var(--font-cinzel), serif" }}
+                style={{ fontFamily: "display, " }}
               >
                 PRECISION
               </span>
-              <span className="font-sans text-[10px] sm:text-xs tracking-[0.2em] text-gold-500/80 font-light">
+              <span className="font-display text-[10px] sm:text-xs tracking-[0.2em] text-gold-500/80 font-light">
                 STAIN & SEAL
               </span>
             </div>
@@ -90,7 +90,7 @@ export default function Navbar() {
               <button
                 key={link.label}
                 onClick={() => handleNavClick(link.href)}
-                className="cursor-pointer relative font-sans text-xs tracking-[0.15em] uppercase text-gold-200/70 hover:text-gold-400 transition-colors duration-300 group"
+                className="cursor-pointer relative font-display text-xs tracking-[0.15em] uppercase text-gold-200/70 hover:text-gold-400 transition-colors duration-300 group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-gold-gradient-h group-hover:w-full transition-all duration-300" />
@@ -105,11 +105,11 @@ export default function Navbar() {
               className="flex items-center gap-2 text-xs text-gold-400/80 hover:text-gold-300 transition-colors"
             >
               <Phone size={14} />
-              <span className="font-sans tracking-wider">(512) 555-0100</span>
+              <span className="font-display tracking-wider">(512) 555-0100</span>
             </a>
             <button
               onClick={() => handleNavClick("#contact")}
-              className="cursor-pointer relative px-5 py-2.5 text-xs font-sans tracking-[0.15em] uppercase font-semibold overflow-hidden group border border-gold-600/60 hover:border-gold-400 transition-all duration-300"
+              className="cursor-pointer relative px-5 py-2.5 text-xs font-display tracking-[0.15em] uppercase font-semibold overflow-hidden group border border-gold-600/60 hover:border-gold-400 transition-all duration-300"
             >
               <span className="absolute inset-0 bg-gold-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className="relative text-gold-300 group-hover:text-obsidian-900 transition-colors duration-300">
@@ -175,7 +175,7 @@ export default function Navbar() {
                 </a>
                 <button
                   onClick={() => handleNavClick("#contact")}
-                  className=" px-10 py-3 text-sm font-sans tracking-[0.2em] uppercase font-semibold bg-gold-gradient text-obsidian-900"
+                  className=" px-10 py-3 text-sm font-display tracking-[0.2em] uppercase font-semibold bg-gold-gradient text-obsidian-900"
                 >
                   Get Free Quote
                 </button>
