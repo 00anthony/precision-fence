@@ -167,7 +167,7 @@ export default function Footer() {
             <div className="space-y-4">
               <a href="tel:+15125550100" className="flex items-start gap-2.5 group">
                 <Phone size={13} className="text-gold-600/60 mt-0.5 shrink-0 group-hover:text-gold-400 transition-colors" />
-                <span className="font-sans text-xs text-gold-100/45 group-hover:text-gold-400 transition-colors">(512) 909-5433</span>
+                <span className="font-sans text-xs text-gold-100/45 group-hover:text-gold-400 transition-colors">(512) 745-0521</span>
               </a>
               <a href="mailto:info@precisionstainandseal.com" className="flex items-start gap-2.5 group">
                 <Mail size={13} className="text-gold-600/60 mt-0.5 shrink-0 group-hover:text-gold-400 transition-colors" />

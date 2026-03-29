@@ -105,7 +105,7 @@ export default function Contact() {
                 {
                   icon: Phone,
                   label: "Phone",
-                  value: "(512) 909-5433",
+                  value: "(512) 745-0521",
                   href: "tel:+15125550100",
                 },
                 {
