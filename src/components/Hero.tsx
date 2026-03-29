@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Star, Shield, Award } from "lucide-react";
+import { useIsMobile } from "../hooks/useIsMobile";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -15,8 +16,7 @@ export default function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
-  const isMobile =
-    typeof window !== "undefined" && window.innerWidth < 768;
+  const isMobile = useIsMobile();
 
   const handleScrollDown = () => {
     const el = document.querySelector("#services");
@@ -153,20 +153,30 @@ export default function Hero() {
           <Star size={10} className="text-gold-500 fill-gold-500" />
         </motion.div>
 
-        {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: isMobile ? 0 : 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: isMobile ? 0.4 : 0.9 }}
-          className="font-display mb-4 leading-none"
-        >
-          <span className="block text-4xl sm:text-6xl md:text-8xl font-black gold-shimmer">
-            PRECISION
-          </span>
-          <span className="block text-4xl sm:text-6xl md:text-8xl font-black text-white/90 mt-1">
-            STAIN & SEAL
-          </span>
-        </motion.h1>
+        {isMobile ? (
+  <h1 className="font-display mb-4 leading-none">
+    <span className="block text-4xl sm:text-6xl md:text-8xl font-black gold-shimmer">
+      PRECISION
+    </span>
+    <span className="block text-4xl sm:text-6xl md:text-8xl font-black text-white/90 mt-1">
+      STAIN & SEAL
+    </span>
+  </h1>
+) : (
+  <motion.h1
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.9, ease: "easeOut" }}
+    className="font-display mb-4 leading-none"
+  >
+    <span className="block text-4xl sm:text-6xl md:text-8xl font-black gold-shimmer">
+      PRECISION
+    </span>
+    <span className="block text-4xl sm:text-6xl md:text-8xl font-black text-white/90 mt-1">
+      STAIN & SEAL
+    </span>
+  </motion.h1>
+)}
 
         {/* Divider */}
         <motion.div

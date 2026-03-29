@@ -142,7 +142,7 @@ export default function Navbar() {
             <div className="flex-1 flex flex-col items-center justify-center gap-8 px-8">
               {/* Mobile Logo */}
               <div className="mb-8 text-center">
-                <div className="font-accent text-2xl gold-text tracking-widest" style={{ fontFamily: "var(--font-cinzel), serif" }}>
+                <div className="font-accent text-2xl gold-text tracking-widest" style={{ fontFamily: "display, serif" }}>
                   PRECISION
                 </div>
                 <div className="text-xs tracking-[0.3em] text-gold-500/70 mt-1">STAIN & SEAL</div>
@@ -157,7 +157,7 @@ export default function Navbar() {
                   transition={{ delay: i * 0.08 + 0.1 }}
                   onClick={() => handleNavClick(link.href)}
                   className="font-accent text-xl tracking-[0.25em] uppercase gold-text hover:opacity-80 transition-opacity"
-                  style={{ fontFamily: "var(--font-cinzel), serif" }}
+                  style={{ fontFamily: "display, serif" }}
                 >
                   {link.label}
                 </motion.button>
