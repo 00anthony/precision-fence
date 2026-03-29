@@ -136,7 +136,10 @@ export default function Navbar() {
             initial={{ opacity: 0, x: "100%" }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            transition={{
+              duration: 0.25,
+              ease: "easeOut", // smooth, no spring
+            }}
             className="fixed inset-0 z-40 bg-obsidian-950/98 backdrop-blur-xl flex flex-col"
           >
             <div className="flex-1 flex flex-col items-center justify-center gap-8 px-8">
@@ -154,9 +157,9 @@ export default function Navbar() {
                   key={link.label}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.08 + 0.1 }}
+                  
                   onClick={() => handleNavClick(link.href)}
-                  className="font-accent text-xl tracking-[0.25em] uppercase gold-text hover:opacity-80 transition-opacity"
+                  className=" text-xl tracking-[0.25em] uppercase gold-text hover:opacity-80 transition-opacity"
                   style={{ fontFamily: "display, serif" }}
                 >
                   {link.label}
