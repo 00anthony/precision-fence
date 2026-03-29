@@ -270,7 +270,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="relative w-full py-4 text-sm font-sans tracking-[0.2em] uppercase font-bold overflow-hidden group disabled:opacity-60"
+                    className="cursor-pointer border border-neutral-900 border-t-transparent border-x-transparent mb-2 relative w-full py-4 text-sm font-sans tracking-[0.2em] uppercase font-bold overflow-hidden group disabled:opacity-60 hover:text-amber-200"
                   >
                     <span className="absolute inset-0 bg-gold-gradient" />
                     <span className="relative text-obsidian-950 flex items-center justify-center gap-2">
@@ -279,7 +279,7 @@ export default function Contact() {
                           <motion.span
                             animate={{ rotate: 360 }}
                             transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-                            className="inline-block w-4 h-4 border-2 border-obsidian-900 border-t-transparent rounded-full"
+                            className="inline-block w-4 h-4 border-2 border-neutral-900 border-t-transparent rounded-full"
                           />
                           Sending…
                         </>
