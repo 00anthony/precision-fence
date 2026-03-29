@@ -132,7 +132,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 text-xs text-gold-400/80"
               >
                 <Phone size={14} />
-                <span>(512) 555-0100</span>
+                <span>(512) 909-5433</span>
               </a>
 
               <button
@@ -178,7 +178,7 @@ export default function Navbar() {
                 className="flex items-center gap-2 text-gold-400/80 text-sm"
               >
                 <Phone size={16} />
-                <span>(512) 555-0100</span>
+                <span>(512) 909-5433</span>
               </a>
 
               <button
