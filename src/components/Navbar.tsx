@@ -137,7 +137,6 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: "100%" }}
             transition={{
-              duration: 0.25,
             }}
             className="fixed inset-0 z-40 bg-obsidian-950/98 backdrop-blur-xl flex flex-col"
           >
