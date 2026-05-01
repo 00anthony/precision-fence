@@ -22,15 +22,15 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://precision-stain-and-seal.vercel.app"),
+  metadataBase: new URL("https://precisionstainseal.com"),
 
-  title: "Precision Stain & Seal | Fences & Decks — Austin, TX",
+  title: "Barton & Birch | Fences & Decks — Austin, TX",
   description:
     "Austin's premier fence and deck staining specialists. We restore, protect, and beautify your outdoor wood surfaces with precision craftsmanship.",
   keywords: "fence staining Austin TX, deck staining Austin, wood sealing Austin Texas, outdoor wood restoration",
 
   openGraph: {
-    title: "Precision Stain & Seal | Fences & Decks — Austin, TX",
+    title: "Barton & Birch | Fences & Decks — Austin, TX",
     description:
       "Austin's premier fence and deck staining specialists. We restore, protect, and beautify your outdoor wood surfaces with precision craftsmanship.",
     images: ['/og-image.png'],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: "Precision Stain & Seal | Fences & Decks — Austin, TX",
+    title: "Barton & Birch | Fences & Decks — Austin, TX",
     description:
       "Austin's premier fence and deck staining specialists.",
     images: ['/og-image.png'],

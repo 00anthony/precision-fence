@@ -98,7 +98,7 @@ export async function POST(req: Request) {
     // 💌 Auto-reply to customer
     // -------------------------
     const { error: autoReplyError } = await resend.emails.send({
-      from: "Precision Stain & Seal <noreply@precisionstainseal.com>",
+      from: "Barton & Birch <noreply@precisionstainseal.com>",
       to: safeEmail,
       subject: "We got your quote request!",
       html: `
@@ -106,7 +106,7 @@ export async function POST(req: Request) {
         <p>Thanks for reaching out! We've received your request and will get back to you within 24 hours.</p>
         <p>If it's urgent, feel free to call or text us.</p>
         <br/>
-        <p><strong>— Precision Stain & Seal</strong></p>
+        <p><strong>— Barton & Birch</strong></p>
       `,
     });
 

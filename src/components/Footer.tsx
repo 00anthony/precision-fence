@@ -92,9 +92,11 @@ export default function Footer() {
               </svg>
               <div className="flex flex-col leading-none">
                 <span className="font-accent text-sm font-bold tracking-widest gold-text" style={{ fontFamily: "var(--font-cinzel), serif" }}>
-                  PRECISION
+                  BARTON
                 </span>
-                <span className="font-sans text-[9px] tracking-[0.2em] text-gold-600/70">STAIN & SEAL</span>
+                <span className="font-sans text-[9px] tracking-[0.2em] text-gold-600/70">
+                  & BIRCH
+                </span>
               </div>
             </div>
 
@@ -169,10 +171,10 @@ export default function Footer() {
                 <Phone size={13} className="text-gold-600/60 mt-0.5 shrink-0 group-hover:text-gold-400 transition-colors" />
                 <span className="font-sans text-xs text-gold-100/45 group-hover:text-gold-400 transition-colors">(512) 745-0521</span>
               </a>
-              <a href="mailto:info@precisionstainandseal.com" className="flex items-start gap-2.5 group">
+              <a href="mailto:info@bartonandbirch.com" className="flex items-start gap-2.5 group">
                 <Mail size={13} className="text-gold-600/60 mt-0.5 shrink-0 group-hover:text-gold-400 transition-colors" />
                 <span className="font-sans text-xs text-gold-100/45 group-hover:text-gold-400 transition-colors break-all">
-                  info@precisionstainandseal.com
+                  info@bartonandbirch.com
                 </span>
               </a>
               <div className="flex items-start gap-2.5">
@@ -195,7 +197,7 @@ export default function Footer() {
       <div className="gold-divider" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="font-sans text-[10px] text-gold-700/50 tracking-wider text-center sm:text-left">
-          © {new Date().getFullYear()} Precision Stain & Seal. All rights reserved. Austin, Texas.
+          © {new Date().getFullYear()} Barton & Birch. All rights reserved. Austin, Texas.
         </p>
         <p className="font-sans text-[10px] text-gold-800/40 tracking-wider">
           Licensed · Insured · Local

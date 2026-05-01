@@ -16,7 +16,7 @@ const testimonials = [
     name: "James & Carla T.",
     location: "Westlake Hills",
     stars: 5,
-    text: "Our deck was embarrassing — gray, cracked, just rough. Precision Stain transformed it in two days. They were professional, arrived on time, cleaned up perfectly, and the result was jaw-dropping. Worth every cent.",
+    text: "Our deck was embarrassing — gray, cracked, just rough. Barton & Birch transformed it in two days. They were professional, arrived on time, cleaned up perfectly, and the result was jaw-dropping. Worth every cent.",
     project: "Composite & Wood Deck",
   },
   {

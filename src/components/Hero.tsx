@@ -156,10 +156,10 @@ export default function Hero() {
         {isMobile ? (
   <h1 className="font-display mb-4 leading-none">
     <span className="block text-4xl sm:text-6xl md:text-8xl font-black gold-shimmer">
-      PRECISION
+      BARTON
     </span>
     <span className="block text-4xl sm:text-6xl md:text-8xl font-black text-white/90 mt-1">
-      STAIN & SEAL
+      & BIRCH
     </span>
   </h1>
 ) : (
@@ -170,10 +170,10 @@ export default function Hero() {
     className="font-display mb-4 leading-none"
   >
     <span className="block text-4xl sm:text-6xl md:text-8xl font-black gold-shimmer">
-      PRECISION
+      BARTON
     </span>
     <span className="block text-4xl sm:text-6xl md:text-8xl font-black text-white/90 mt-1">
-      STAIN & SEAL
+      & BIRCH
     </span>
   </motion.h1>
 )}

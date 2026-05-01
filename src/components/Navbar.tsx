@@ -63,10 +63,10 @@ export default function Navbar() {
               <div className="flex flex-col leading-none">
                 
                 <span className="text-sm font-bold tracking-widest gold-text">
-                  PRECISION
+                  BARTON
                 </span>
                 <span className="text-[10px] tracking-[0.2em] text-gold-500/80">
-                  STAIN & SEAL
+                  & BIRCH
                 </span>
               </div>
             </a>
@@ -104,10 +104,10 @@ export default function Navbar() {
               <Shield fill="gold"/>
               <div className="flex flex-col leading-none">
                 <span className="font-accent text-sm font-700 tracking-widest gold-text">
-                  PRECISION
+                  BARTON
                 </span>
                 <span className="text-[10px] tracking-[0.2em] text-gold-500/80">
-                  STAIN & SEAL
+                  & BIRCH
                 </span>
               </div>
             </a>
@@ -153,10 +153,10 @@ export default function Navbar() {
             {/* Logo */}
             <div className="text-center">
               <div className="text-2xl gold-text tracking-widest">
-                PRECISION
+                BARTON
               </div>
               <div className="text-xs tracking-[0.3em] text-gold-500/70">
-                STAIN & SEAL
+                & BIRCH
               </div>
             </div>
 

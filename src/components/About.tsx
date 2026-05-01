@@ -129,7 +129,7 @@ export default function About() {
             </h2>
             <div className="gold-divider w-20 mb-6" />
             <p className="font-sans text-gold-100/50 font-light leading-relaxed text-base mb-4">
-              Precision Stain & Seal was founded right here in Austin, Texas
+              Barton & Birch was founded right here in Austin, Texas
               with one mission: to give every fence and deck the care it
               deserves. Over a decade later, that mission hasn't changed.
             </p>

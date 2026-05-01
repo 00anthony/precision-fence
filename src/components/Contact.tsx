@@ -105,14 +105,14 @@ export default function Contact() {
                 {
                   icon: Phone,
                   label: "Phone",
-                  value: "(512) 745-0521",
-                  href: "tel:+15125550100",
+                  value: "(737) 429-5346",
+                  href: "tel:+17374295346",
                 },
                 {
                   icon: Mail,
                   label: "Email",
-                  value: "info@precisionstainandseal.com",
-                  href: "mailto:info@precisionstainandseal.com",
+                  value: "info@bartonandbirch.com",
+                  href: "mailto:info@bartonandbirch.com",
                 },
                 {
                   icon: MapPin,
