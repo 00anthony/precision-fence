@@ -6,31 +6,16 @@ import { ChevronDown, Star, Shield, Award } from "lucide-react";
 import { useIsMobile } from "../hooks/useIsMobile";
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
   const isMobile = useIsMobile();
 
-  const handleScrollDown = () => {
-    const el = document.querySelector("#services");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section
-      ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       {/* BACKGROUND LAYERS */}
       <motion.div
-        style={!isMobile ? { y } : undefined}
+        style={!isMobile ? {  } : undefined}
         className="absolute inset-0 z-0"
       >
         {/* Dark gradient base */}
@@ -136,7 +121,7 @@ export default function Hero() {
 
       {/* CONTENT */}
       <motion.div
-        style={!isMobile ? { opacity } : undefined}
+        style={!isMobile ? {  } : undefined}
         className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center"
       >
         {/* Badge */}
@@ -195,37 +180,16 @@ export default function Hero() {
           We restore, protect, and beautify your outdoor wood surfaces with expert craftsmanship and premium-grade stains.
         </motion.p>
 
-        {/* Stats */}
-        <div className="flex items-center justify-center gap-8 sm:gap-12 mb-10">
-          {[
-            { value: "500+", label: "Projects" },
-            { value: "10+", label: "Years" },
-            { value: "5★", label: "Rating" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold gold-text">
-                {stat.value}
-              </div>
-              <div className="text-[10px] tracking-[0.2em] uppercase text-gold-500/50">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
+        
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={() =>
-              document.querySelector("#contact")?.scrollIntoView({
-                behavior: "smooth",
-              })
-            }
-            className="px-8 py-4 text-sm uppercase font-bold bg-gold-gradient text-obsidian-950"
+          <a
+            href="#contact"
+            className="group inline-flex items-center gap-3 bg-sky text-white px-8 py-4 font-handwriting text-xl rounded-full shadow-scrapbook hover:shadow-scrapbook-lg hover:-translate-y-1 transition-all duration-200"
           >
-            <Shield size={14} className="inline mr-2" />
             Get Free Quote
-          </button>
+          </a>
 
           <button
             onClick={() =>
@@ -243,7 +207,6 @@ export default function Hero() {
 
       {/* Scroll cue (kept lightweight) */}
       <button
-        onClick={handleScrollDown}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-gold-600/60"
       >
         <span className="text-[9px] tracking-[0.3em] uppercase">Scroll</span>

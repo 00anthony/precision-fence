@@ -8,7 +8,6 @@ import { Shield } from "lucide-react";
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
-  { label: "About", href: "/#about" },
   { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
@@ -101,15 +100,11 @@ export default function Navbar() {
               }}
               className="flex items-center gap-3 group"
             >
-              <Shield fill="gold"/>
-              <div className="flex flex-col leading-none">
-                <span className="font-accent text-sm font-700 tracking-widest gold-text">
-                  BARTON
-                </span>
-                <span className="text-[10px] tracking-[0.2em] text-gold-500/80">
-                  & BIRCH
-                </span>
-              </div>
+              <img
+                src='/logo.jpeg'
+                alt="logo"
+                className="w-30 h-15 -mt-8 -mb-8 overflow-visible"
+              />
             </a>
 
             {/* Desktop Nav */}
@@ -128,11 +123,11 @@ export default function Navbar() {
             {/* CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+15125550100"
+                href="tel:+17374295346"
                 className="flex items-center gap-2 text-xs text-gold-400/80"
               >
                 <Phone size={14} />
-                <span>(512) 745-0521</span>
+                <span>(737) 429-5346</span>
               </a>
 
               <button
@@ -174,11 +169,11 @@ export default function Navbar() {
             {/* CTA */}
             <div className="mt-8 flex flex-col items-center gap-4">
               <a
-                href="tel:+15125550100"
+                href="tel:+17374295346"
                 className="flex items-center gap-2 text-gold-400/80 text-sm"
               >
                 <Phone size={16} />
-                <span>(512) 745-0521</span>
+                <span>(737) 429-5346</span>
               </a>
 
               <button
