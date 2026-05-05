@@ -71,7 +71,7 @@ export async function POST(req: Request) {
     // 📩 Send Email to YOU
     // -------------------------
     const { error: notifyError } = await resend.emails.send({
-      from: "Fence Quotes <newclient@precisionstainseal.com>",
+      from: "Fence Quotes <newclient@bartonandbirch.com>",
       to: "brittanybrammer@outlook.com",
       subject: `New Quote Request — ${safeService} | ${safeName}`,
       replyTo: `${safeName} <${safeEmail}>`,
@@ -98,7 +98,7 @@ export async function POST(req: Request) {
     // 💌 Auto-reply to customer
     // -------------------------
     const { error: autoReplyError } = await resend.emails.send({
-      from: "Barton & Birch <noreply@precisionstainseal.com>",
+      from: "Barton & Birch <noreply@bartonandbirch.com>",
       to: safeEmail,
       subject: "We got your quote request!",
       html: `
