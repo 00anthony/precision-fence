@@ -22,7 +22,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://precisionstainseal.com"),
+  metadataBase: new URL("https://bartonandbirch.com"),
 
   title: "Barton & Birch | Fences & Decks — Austin, TX",
   description:
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Barton & Birch | Fences & Decks — Austin, TX",
     description:
       "Austin's premier fence and deck staining specialists. We restore, protect, and beautify your outdoor wood surfaces with precision craftsmanship.",
-    images: ['/og-image.png'],
+    images: ['/logo.jpeg'],
   },
 
   twitter: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Barton & Birch | Fences & Decks — Austin, TX",
     description:
       "Austin's premier fence and deck staining specialists.",
-    images: ['/og-image.png'],
+    images: ['/logo.jpeg'],
   },
 };
 
